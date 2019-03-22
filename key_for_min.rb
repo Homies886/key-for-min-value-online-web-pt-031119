@@ -7,13 +7,24 @@ def key_for_min_value(name_hash)
     return nil
   else
     name_hash.collect do |k, v|
-      counter = 0
+      v
+      
+  end
+end
+
+
+
+
+def key_for_min_value(name_hash)
+  if name_hash == {}
+    return nil
+  else
+    counter = 0
       while counter < v
         puts "#{counter}"
       else
         return counter
       counter += 1
       end
-        
   end
 end
